@@ -59,6 +59,7 @@ export function AddEmployeeModal({ isOpen, onClose, onAddEmployee }: AddEmployee
               <Label htmlFor="name" className="text-right">
                 Name
               </Label>
+              
               <Input id="name" value={name} onChange={(e) => setName(e.target.value)} className="col-span-3" />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
