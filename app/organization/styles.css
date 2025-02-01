@@ -1,0 +1,32 @@
+.org-tree {
+    --connection-color: #e2e8f0;
+    --connection-width: 2px;
+  }
+  
+  .org-tree .connection {
+    stroke: var(--connection-color);
+    stroke-width: var(--connection-width);
+  }
+  
+  .org-tree .node {
+    cursor: grab;
+    transition: transform 0.2s;
+  }
+  
+  .org-tree .node:active {
+    cursor: grabbing;
+  }
+  
+  .org-tree .node:hover {
+    transform: scale(1.02);
+  }
+  
+  .org-tree .node.dragging {
+    opacity: 0.5;
+  }
+  
+  .org-tree .node.over {
+    border-color: hsl(var(--primary));
+  }
+  
+  
